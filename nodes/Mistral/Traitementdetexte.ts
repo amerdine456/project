@@ -172,5 +172,5 @@ export function maFonctionDeTraitementdetexte(texte: string, htmlOriginal:string
 		// Gérer le cas "59,99undefined" si ce n'est pas résolu par la logique ci-dessus.
 		texteModifie = texteModifie.replace(/(\d+),(\d{2})undefined/g, '$1,$2€');
 
-		return texteModifie + '\n\n--- Debug Info Prix ---\n' + debugInfo.join('\n');
+		return texteModifie;
 }
